@@ -397,6 +397,3 @@ The `db.json` comes pre-seeded with:
 
 MIT — free to use, modify, and distribute.
 
----
-
-<p align="center">Built with ❤️ using Next.js + FastMCP + Claude</p>
