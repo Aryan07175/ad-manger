@@ -1,0 +1,26 @@
+{
+  "advertisers": [
+    { "id": 1001, "name": "Nike Inc.", "status": "ACTIVE", "type": "ADVERTISER", "created_at": "2025-01-15T09:00:00Z" },
+    { "id": 1002, "name": "Apple Corp.", "status": "ACTIVE", "type": "ADVERTISER", "created_at": "2025-02-20T10:00:00Z" },
+    { "id": 1003, "name": "ACME Corp.", "status": "ACTIVE", "type": "ADVERTISER", "created_at": "2025-03-10T11:00:00Z" },
+    { "id": 1004, "name": "Samsung Global", "status": "ACTIVE", "type": "ADVERTISER", "created_at": "2025-04-05T12:00:00Z" }
+  ],
+  "orders": [
+    { "id": 2001, "name": "Nike Summer 2025", "advertiser_id": 1001, "status": "DELIVERING", "trafficker_id": 9001, "created_at": "2025-06-01T09:00:00Z" },
+    { "id": 2002, "name": "Apple iPhone 17 Launch", "advertiser_id": 1002, "status": "DELIVERING", "trafficker_id": 9001, "created_at": "2025-06-10T10:00:00Z" },
+    { "id": 2003, "name": "ACME Holiday Campaign", "advertiser_id": 1003, "status": "PENDING", "trafficker_id": 9001, "created_at": "2025-06-15T11:00:00Z" }
+  ],
+  "line_items": [
+    { "id": 3001, "order_id": 2001, "name": "Nike Display Banner", "status": "DELIVERING", "type": "STANDARD", "goal_impressions": 500000, "impressions_delivered": 285000, "clicks_delivered": 4200, "start_date": "2025-06-01", "end_date": "2025-08-31", "priority": 8, "cost_per_unit_micro": 2500000, "currency_code": "USD", "delivery_rate_type": "EVENLY", "target_ad_unit_id": "unit-001", "creative_sizes": [{"width": 300, "height": 250}, {"width": 728, "height": 90}] },
+    { "id": 3002, "order_id": 2001, "name": "Nike Video Pre-roll", "status": "DELIVERING", "type": "SPONSORSHIP", "goal_impressions": 200000, "impressions_delivered": 120000, "clicks_delivered": 1800, "start_date": "2025-06-01", "end_date": "2025-07-31", "priority": 4, "cost_per_unit_micro": 5000000, "currency_code": "USD", "delivery_rate_type": "FRONTLOADED", "target_ad_unit_id": "unit-002", "creative_sizes": [{"width": 1920, "height": 1080}] },
+    { "id": 3003, "order_id": 2002, "name": "Apple iPhone Display", "status": "DELIVERING", "type": "STANDARD", "goal_impressions": 1000000, "impressions_delivered": 450000, "clicks_delivered": 9200, "start_date": "2025-06-10", "end_date": "2025-09-30", "priority": 8, "cost_per_unit_micro": 3000000, "currency_code": "USD", "delivery_rate_type": "EVENLY", "target_ad_unit_id": "unit-001", "creative_sizes": [{"width": 300, "height": 250}, {"width": 300, "height": 600}] },
+    { "id": 3004, "order_id": 2003, "name": "ACME Holiday Banner", "status": "NEEDS_APPROVAL", "type": "NETWORK", "goal_impressions": 300000, "impressions_delivered": 0, "clicks_delivered": 0, "start_date": "2025-11-15", "end_date": "2025-12-31", "priority": 12, "cost_per_unit_micro": 1000000, "currency_code": "USD", "delivery_rate_type": "AS_FAST_AS_POSSIBLE", "target_ad_unit_id": "unit-003", "creative_sizes": [{"width": 728, "height": 90}] }
+  ],
+  "creatives": [
+    { "id": 4001, "name": "Nike Banner 300x250", "advertiser_id": 1001, "width": 300, "height": 250, "type": "IMAGE", "click_through_url": "https://nike.com/summer", "status": "ACTIVE", "line_item_ids": [3001], "created_at": "2025-06-01T09:00:00Z" },
+    { "id": 4002, "name": "Nike Banner 728x90", "advertiser_id": 1001, "width": 728, "height": 90, "type": "IMAGE", "click_through_url": "https://nike.com/summer", "status": "ACTIVE", "line_item_ids": [3001], "created_at": "2025-06-01T09:30:00Z" },
+    { "id": 4003, "name": "Apple iPhone 17 Promo", "advertiser_id": 1002, "width": 300, "height": 250, "type": "IMAGE", "click_through_url": "https://apple.com/iphone17", "status": "ACTIVE", "line_item_ids": [3003], "created_at": "2025-06-10T10:00:00Z" },
+    { "id": 4004, "name": "Apple iPhone 600x300", "advertiser_id": 1002, "width": 300, "height": 600, "type": "IMAGE", "click_through_url": "https://apple.com/iphone17", "status": "ACTIVE", "line_item_ids": [3003], "created_at": "2025-06-10T10:30:00Z" }
+  ],
+  "next_id": 5000
+}
