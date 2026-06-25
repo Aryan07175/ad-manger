@@ -1,0 +1,18 @@
+# ============================================================
+# Ad Manager MCP Server — Python dependencies
+# ============================================================
+# Install with: pip install -r requirements.txt
+# Python >= 3.10 required
+
+# Core MCP framework
+fastmcp>=2.14.0,<3.0.0
+
+# HTTP requests (used by health check utility and optional API proxy mode)
+httpx>=0.28.0,<1.0.0
+requests>=2.32.0,<3.0.0
+
+# Production HTTP server for --transport http mode
+uvicorn[standard]>=0.30.0,<1.0.0
+
+# Environment variable loading from .env file
+python-dotenv>=1.0.0,<2.0.0

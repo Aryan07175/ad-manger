@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "google-ad-manager": {
+      "command": "C:\\Users\\Lenovo\\Desktop\\mcp\\demo-ad-manager\\mcp_venv\\Scripts\\python.exe",
+      "args": [
+        "C:\\Users\\Lenovo\\Desktop\\mcp\\demo-ad-manager\\mcp_server.py"
+      ],
+      "env": {
+        "MCP_TRANSPORT": "stdio",
+        "MCP_LOG_LEVEL": "INFO",
+        "DB_PATH": "C:\\Users\\Lenovo\\Desktop\\mcp\\demo-ad-manager\\db.json"
+      }
+    }
+  }
+}
