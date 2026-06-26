@@ -391,9 +391,4 @@ The `db.json` comes pre-seeded with:
 | **Creatives** | IDs 4001–4004 (Banner, Video, Native) |
 | **Apps** | 10 apps across categories (Food, Finance, Gaming, etc.) |
 
----
-
-## 📄 License
-
-MIT — free to use, modify, and distribute.
 
